@@ -70,7 +70,7 @@ for (let i = 0; i < 100; i++) {
 async function animate() {
   await new Promise((r) => setTimeout(r, 16));
   requestAnimationFrame(animate);
-  // c.clearRect(0, 0, canvas.width, canvas.height);
+  c.clearRect(0, 0, canvas.width, canvas.height);
 
   circles.forEach((circle) => circle.update());
 }
